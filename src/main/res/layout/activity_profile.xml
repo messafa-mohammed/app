@@ -79,11 +79,10 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/p_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="141dp"
-        android:text="Hanoun"
         android:textColor="@color/green"
         android:textSize="26dp"
         app:layout_constraintEnd_toEndOf="parent"
