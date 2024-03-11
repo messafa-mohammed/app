@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SigninActivity extends AppCompatActivity {
-    UserAdapter userAdapter;
+    private DatabaseHelper dbHelper;
     EditText username , password , phone , email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +20,12 @@ public class SigninActivity extends AppCompatActivity {
         Button login = findViewById(R.id.btn4);
         Button sign = findViewById(R.id.btn3);
 
+
         username = findViewById(R.id.s_username);
         password = findViewById(R.id.s_password);
         phone = findViewById(R.id.s_phone);
         email = findViewById(R.id.s_email);
-        userAdapter = new UserAdapter(this);
+        dbHelper = new DatabaseHelper(this);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,14 +58,12 @@ public class SigninActivity extends AppCompatActivity {
             return;
         }
 
-        SQLiteDatabase db = userAdapter.getWritableDatabase();
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("v_username", v_username);
-        values.put("v_password", v_password);
-        values.put("v_email", v_email);
-        values.put("v_phone", v_phone);
 
-        long newRowId = db.insert("Users", null, values);
+
+
+        long newRowId = dbHelper.insertData(v_username,v_password,v_email,v_phone);
         if (newRowId != -1) {
             Toast.makeText(this, "Student registered successfully.", Toast.LENGTH_SHORT).show();
         } else {

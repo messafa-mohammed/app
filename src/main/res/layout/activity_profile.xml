@@ -14,7 +14,7 @@
         android:layout_marginTop="85dp"
         android:text="Welcome in your world"
         android:textColor="@color/aqua"
-        android:textSize="30dp"
+        android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,8 +27,8 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="160dp"
         android:text="Your contact :"
-        android:textColor="@color/blue"
-        android:textSize="24dp"
+        android:textColor="@color/aqua"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -36,11 +36,11 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="39dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="128dp"
         android:text="Email:"
-        android:textColor="@color/aqua"
-        android:textSize="20dp"
+        android:textColor="@color/blue"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -48,11 +48,11 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="34dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginBottom="100dp"
         android:text="Phone:"
-        android:textColor="@color/aqua"
-        android:textSize="20dp"
+        android:textColor="@color/blue"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
